@@ -11,6 +11,10 @@ public class ManagerPage {
 
     @FindBy(xpath = "//*[contains(@class, 'btn btn-lg tab')]")
     private WebElement addcustBtn;
+    @FindBy(xpath = "//*[contains(@ng-click, 'showCust()')]")
+    private WebElement customersBtn;
     public void clickaddcustBtn() {
         addcustBtn.click(); }
+    public void clickCustomersBtn() {
+        customersBtn.click(); }
 }
